@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/boxicons-2.1.4/css/boxicons.css">
+    <title>Document</title>
+    
+</head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+
+    #container {
+        width: 100%;
+        height: 100vh;
+        background-color: #f8f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box-content {
+        width: 400px;
+        height: 220px;
+        border-radius: 10px;
+        box-shadow: 5px 5px 20px rgb(192, 192, 192) ;
+        position: relative;
+    }
+
+    .box-options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 150px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;   
+        background-color: white;
+    }
+
+    .box-options .box-text {
+        width: 350px;
+        height: 100px;
+        background-color: white;
+    }
+
+    .box-options .text-content {
+        display: block;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .box-text .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 5px;
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    .box-options .text-small {
+        display: inline-block;
+        font-size: 12px;
+        color: gray;
+    }
+    .box-content .button-options {
+        float: right;
+        margin-right: 15px;
+        margin-top: 17px;
+        padding: 10px 12px;
+        border: none;
+        border-radius: 5px;
+    }
+    
+    .button-Deac {
+        background-color: red;
+        color: white;
+        font-size: 12px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+    .button-Deac:hover {
+        background-color: rgb(225, 61, 61);
+    }
+    
+    .button-Cancel {
+        font-size: 12px;
+        text-decoration: none;
+        font-weight: 600;
+        color: rgb(131, 131, 131);
+    }
+
+</style>
+<body>
+    <main id="container">
+        <div class="box-content">
+            <div class="box-options">
+                <div class="box-text">
+                    <span class="text-content">Deactivate account</span>
+                    <i class='bx bx-x close' ></i>
+                    <span class="text-small">Are you sure you want to deactivate your account? 
+                        By doing this you will lose all of your saved data and will not be able to retrieve it. </span>
+                </div>
+            </div>
+            <a href="#"  class="button-options button-Deac">Deactivate</a>
+            <a href="#"  class="button-options button-Cancel">Cancel</a>
+        </div>
+    </main> 
+</body>
+</html>
